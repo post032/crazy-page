@@ -509,12 +509,11 @@ template {
   .delivery__logo img {
     width: 228px;
     height: 46px;
-    margin-right: 24px;
   }
   .delivery__help {
     position: absolute;
     bottom: -54px;
-    left: -13%;
+    left: -7%;
   }
   .delivery__logo {
     margin-bottom: 0;
@@ -689,20 +688,17 @@ template {
   }
 }
 @media (min-width: 1140px) {
-  .delivery__title {
-    margin-right: 20px;
-  }
   .form__radio + label {
     position: relative;
-    padding-left: 10px;
+    padding-left: 38px;
   }
   .form__radio + label::before {
     top: 14px;
-    left: -23px;
+    left: 4px;
   }
   .form__radio + label::after {
     top: 19px;
-    left: -18px;
+    left: 9px;
   }
   .form__choice {
     margin-bottom: 25px;
@@ -711,8 +707,7 @@ template {
     margin-bottom: 15px;
   }
   .form__input {
-    margin-right: 20px;
-    width: calc(100% - 60px);
+    width: calc(100% - 90px);
   }
   .form__details {
     margin-top: 21px;
@@ -997,13 +992,9 @@ template {
   }
 }
 @media (min-width: 1140px) {
-  .order {
-    margin-right: 0;
-  }
   .order__title {
     font-size: 26px;
     margin-top: 23px;
-    margin-left: 20px;
   }
   .order__list img {
     width: 93px;
@@ -1011,10 +1002,6 @@ template {
   }
   .order__element {
     width: calc(50% + 90px);
-  }
-  .order__price,
-  .order__price-old {
-    margin-right: 9px;
   }
   .order__item {
     padding-top: 12px;
