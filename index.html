@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>crazy choco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <main class="main-page">
+      <div class="container">
+        <form class="block__delivery" action="index.html" method="post">
+          <div class="delivery__bg">
+            <section class="delivery"><a class="delivery__logo" href="index.html"><img src="img/crazychoco-logo1.png" alt="логотип crazy choco"></a>
+              <p class="delivery__help">Трудности при оформлении? Звоните <a href="tel:+79776547228">+79776547228</a></p>
+              <h1 class="delivery__title">Доставка</h1>
+              <div class="form">
+                <div class="form__choice">
+                  <input class="form__radio" type="radio" id="pickup" name="delivery" value="Самовывоз">
+                  <label for="pickup">
+                    <p class="form__name">Самовывоз - <span>0 р</span></p><span class="form__description">Москва, Алтуфьевское шоссе 80 ; ПН-ВС 10:00-20:00</span>
+                  </label>
+                </div>
+                <div class="form__choice">
+                  <input class="form__radio" type="radio" id="delivery" name="delivery" value="доставка на дом">
+                  <label for="delivery">
+                    <p class="form__name">Курьерская доставка по Москве и России - <span>? ₽ </span></p><span class="form__description">Для расчета стоимости доставки введите адрес</span>
+                  </label>
+                </div>
+                <div class="form__choice form__choice--last">
+                  <input class="form__radio" type="radio" id="pvz" name="delivery" value="Пункт выдачи" checked>
+                  <label for="pvz">
+                    <p class="form__name">Доставка до ПВЗ по Москве и России - <span>210 ₽ </span></p><span class="form__description">Для расчета стоимости доставки введите адрес</span>
+                  </label>
+                </div>
+                <div class="form__input">
+                  <input class="form__input-text" id="name" type="text" name="name" placeholder="Имя и Фамилия">
+                  <label class="visually-hidden" for="name">Введите Имя и Фамилию</label>
+                  <input class="form__input-text" id="tel" type="tel" name="name" placeholder="Номер телефона">
+                  <label class="visually-hidden" for="tel">Введите номер телефона</label>
+                  <input class="form__input-text" id="mail" type="mail" name="name" placeholder="E-mail">
+                  <label class="visually-hidden" for="mail">Введите E-mail</label>
+                  <input class="form__input-text" id="address" type="text" name="name" placeholder="Адрес в произвольной форме">
+                  <label class="visually-hidden" for="address">Введите адрес в произвольной форме</label><a class="form__link" href="#order">Подробная информация о заказе</a>
+                  <h2 class="form__details">Детали</h2>
+                  <textarea class="form__textarea" name="name" rows="8" placeholder="Примечание к вашему заказу, например, особые пожелания отделу доставки"></textarea>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="order__line">
+            <section class="order" id="order">
+              <h2 class="order__title">Ваш заказ</h2>
+              <ul class="order__lists">
+                <li class="order__list">
+                  <div class="order__element"><img src="img/img1.png" alt="Шоколадная косметичка">
+                    <h3 class="order__name">Шоколадная косметичка</h3>
+                  </div>
+                  <div class="order__element-price"><span class="order__price">850р</span><span class="order__price-old"> 
+                      <del>970р</del></span></div>
+                </li>
+                <li class="order__list">
+                  <div class="order__element"><img src="img/img2.png" alt="Пистолет и патроны">
+                    <h3 class="order__name">Пистолет и патроны</h3>
+                  </div>
+                  <div class="order__element-price"><span class="order__price">1272р</span><span class="order__price-old"> 
+                      <del>1590р</del></span></div>
+                </li>
+                <li class="order__list">
+                  <div class="order__element"><img src="img/img3.png" alt="Шоколадные инструменты XL">
+                    <h3 class="order__name">Шоколадные инструменты XL</h3>
+                  </div>
+                  <div class="order__element-price"><span class="order__price">1485р</span><span class="order__price-old"> 
+                      <del>1790р</del></span></div>
+                </li>
+              </ul>
+              <ul class="order__full">
+                <li class="order__item"> 
+                  <p class="order__full-name">Сумма заказа</p><span class="order__sum">3607p</span>
+                </li>
+                <li class="order__item"> 
+                  <p class="order__full-name">Доставка</p><span class="order__sum">210p</span>
+                </li>
+                <li class="order__item"> 
+                  <p class="order__full-name"> Итого</p><span class="order__sum">3607p</span>
+                </li>
+              </ul>
+              <ul class="order__payment">
+                <li class="order__pay">
+                  <input class="order__pay__input" type="radio" id="pay1" name="pay" value="Оплата при доставке" checked>
+                  <label class="order__pay__name" for="pay1">Оплата при доставке</label>
+                </li>
+                <li class="order__pay">
+                  <input class="order__pay__input" type="radio" id="pay2" name="pay" value="Оплатить наличными при получении">
+                  <label class="order__pay__name" for="pay2">Оплатить наличными при получении</label>
+                </li>
+              </ul>
+              <div class="order__submit">
+                <button class="order__button" type="submit">Подтвердить заказ</button>
+              </div>
+            </section>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
